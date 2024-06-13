@@ -8,8 +8,14 @@ body {
     color: white;
     padding: 10px 20px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between; /* Adjusted alignment */
     align-items: center;
+}
+
+.top-bar-name {
+    font-size: 24px; /* Large font size */
+    font-weight: bold; /* Bold font */
+    color: white;
 }
 
 .top-bar-button {
