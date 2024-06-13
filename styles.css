@@ -13,7 +13,7 @@ body {
 }
 
 .top-bar-name {
-    font-size: 24px; /* Large font size */
+    font-size: 32px; /* Large font size */
     font-weight: bold; /* Bold font */
     color: white;
 }
@@ -28,13 +28,75 @@ body {
     font-size: 16px;
 }
 
+.top-bar-button-current {
+    background-color: darkslategrey;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 .top-bar-button:hover {
     background-color: white;
     color: black;
 }
 
-.content {
-    margin: 20px 10%;
+.content-container {
+    background-color: darkgrey; /* Light grey background color */
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.content-container-inner {
+    background-color: white; /* Light grey background color */
+    
+    width: 95%; 
+}
+
+.main-content {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #ccc; /* Line between top-bar and main-content */
+}
+
+.left-content {
+    width: 60%; /* Left content takes 60% of the page width */
+    padding: 20px;
+    border-right: 1px solid #ccc; /* Thin line between left and right content */
+}
+
+.left-content-box {
+    margin: 0 0 20px; /* Add space between paragraphs */
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Thin line between paragraphs */
+}
+
+.right-content {
+    width: 40%; /* Right content takes 40% of the page width */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center align text */
+}
+
+.right-content p {
+    font-size: 16px; /* Large font size */
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-content img {
+    width: 80%; /* Ensure image fits within its container */
+    height: auto;
 }
 
 .content h1 {
