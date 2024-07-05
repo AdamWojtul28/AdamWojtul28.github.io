@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adam Wojtulewski</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="../Initials.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+      }
+      .pdf-container {
+        width: 100%;
+        height: 100vh; /* Full height of the viewport */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f9; /* Light background color */
+      }
+      embed {
+        width: 80%;
+        height: 90vh; /* Almost full height, with some margin */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+        border-radius: 8px; /* Rounded corners */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-text">
+        <span class="top-bar-name">Adam Wojtulewski</span>
+      </div>
+      <div class="top-bar-buttons">
+        <a href="index.html"><button class="top-bar-button">Home</button></a>
+        <button class="top-bar-button-current">Resume</button>
+        <a href="projects.html"
+          ><button class="top-bar-button">Projects</button></a
+        >
+        <a href="profiles.html"
+          ><button class="top-bar-button">Profiles</button></a
+        >
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="content-container-inner">
+        <div class="main-content">
+          <div class="left-content">
+            <h1>Resume</h1>
+            <div class="pdf-container">
+              <embed
+                src="../Wojtulewski_Adam_March-2024.pdf"
+                type="application/pdf"
+              />
+            </div>
+          </div>
+          <div class="right-content">
+            <img
+              src="../Adam_Wojtulewski_Photo_Main.jpg"
+              alt="Adam Wojtulewski Image"
+            />
+            <p>
+              Adam Wojtulewski <br />
+              <br />
+              Undergraduate <br />
+              Computer Science <br />
+              University of Florida <br />
+              <br />
+              adamwojtulewski@ufl.edu <br />
+              (727)-216-5969
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
