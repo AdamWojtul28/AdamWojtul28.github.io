@@ -103,7 +103,7 @@ body {
 
 .left-content p {
     line-height: 1.6;
-    color: #666; /* Medium grey for better readability */
+    color: #333; /* Medium grey for better readability */
 }
 
 .right-content img {
